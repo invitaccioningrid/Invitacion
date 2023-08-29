@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Casa.css" media="screen">
+        <script src="In-java.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>Invitación a Mis 15 Años</title>
+        <script>
+            const fechaObjetivo = new Date("2023-09-30T06:00:00").getTime();
+            const actualizarContador = setInterval(function() {
+                const ahora = new Date().getTime();
+                const tiempoRestante = fechaObjetivo - ahora;
+                const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
+                document.getElementById("cuenta-regresiva").innerHTML =
+                    `${dias}D ${horas}H ${minutos}M ${segundos}S`;
+                if (tiempoRestante <= 0) {
+                    clearInterval(actualizarContador);
+                    document.getElementById("cuenta-regresiva").innerHTML = "¡Es el momento!";
+                }
+            }, 1000); 
+        </script>
+        
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">
+                <span class="nombre">Ingrid Valentina Sánchez Cervantes</span>
+            </a>
+        </header>
+    
+        <div class="main">
+            <div class="dedicatoria">
+                <img src="Imagenes/In-dedicatoria.jpg" alt="im_dedicatoria">
+                <div class="texto-centrado">
+                    <span> Señor Dios! Creo en tí, con todas la fuerzas de mi ser y por eso te ofrezco mi juventud; que guies mis pasos, mis acciones y mis pensamientos, te doy gracias por permitirme llegar a este momento de mi vida el cual dejaré atrás mi infancia y comenzaré un nuevo viaje de ilusiones...
+                        Hay momentos inolvidables que se atesoran para siempre en el corazón, por esa razón quiero que compartas conmigo esta noche tan especial para mí y mi
+                        familia,
+                        la celebración de mis XV años. </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main inter">
+            <div class="parallax-image">
+                <img src="Imagenes/In-inter.jpeg" alt="Imagen inter">
+            </div>
+        </div>
+        
+        <div class="main fondo">
+            <div class="fondo">
+                <img src="Imagenes/In-fondo-transformed.png" alt="im_fondo">
+            </div>
+        </div>
+
+        <div class="main agradecimiento">
+            <div class="agradecimiento">
+                <img src="Imagenes/In-agradecimiento.png" alt="agradecimiento">
+            </div>
+        </div>
+        
+        <section class="section">    
+            <div class="misa">
+                <div class="image-map-container">
+                    <img src="Imagenes/In-misa.jpg" alt="misa">
+                    <div class="texto-misa">
+                        <span> 
+                            <p>Misa</p> <p>Parroquia de San Pío de Pietrelcina</p> <p>6:00 pm</p> <p>C. José María Escriba 118, 45653 Hacienda Santa Fe, Jal.</p>
+                        </span>
+                    </div>
+                    <div class="templo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.6065106598894!2d-103.38779442562723!3d20.52235080498096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f525f7c5fb187%3A0x8719c46028252dc3!2sC.%20Jos%C3%A9%20Mar%C3%ADa%20Escriba%20118%2C%2045653%20Hacienda%20Santa%20Fe%2C%20Jal.!5e0!3m2!1sen!2smx!4v1692289649287!5m2!1sen!2smx" width="100%" height="100%"% style="border:0;" frameborder="0" allowfullscreen="" loading="lazy" ></iframe>
+                    </div>
+                </div>
+            </div>    
+            <div class="evento">
+                <div class="image-map-evento">
+                    <img src="Imagenes/In-evento.jpg" alt="evento">
+                    <div class="texto-evento">
+                        <span> 
+                            <p>EVENTO</p> <p>Salón Gran Victoria</p> <p>8:00 pm</p> <p>prolongación Morelos 103 Colonia Unión del cuatro Tlajomulco Jal.</p>
+                        </span>
+                    </div>
+                    
+                    <div class="casino">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.4566074762183!2d-103.36591212562705!3d20.528490404774757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f52813edf7be9%3A0x177598463383852b!2sC.%20Morelos%20103%2C%20San%20Sebasti%C3%A1n%20El%20Grande%2C%2045654%20Santa%20Cruz%20del%20Valle%2C%20Jal.!5e0!3m2!1ses!2smx!4v1692289665338!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="confirmacion">
+                        <p>Por favor, confirma tu asistencia <a href="https://forms.gle/V1XZXptwFwG4ixLm6" target="_blank" rel="noopener noreferrer">aquí</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vestimenta">
+                <div class="codigo-vetimeta">
+                    <img src="Imagenes/In-codigovestimenta.jpeg" alt="codigo-vetimeta-img">
+                    <div class="vestimenta-png">
+                        <img src="Imagenes/png-vestimenta.png" alt="pngvestimenta">
+                    </div>
+                    <div class="texto-vestimenta">
+                        <span>Codigo de vestimenta formal </span>
+                    </div>
+                </div>
+            </div>
+            <div class="relog">
+                <div class="image-relog">
+                    <img src="Imagenes/in-relog.jpeg" alt="relog">
+                    <div class="contador">
+                        <p class="texto-contador">¡La cuenta regresiva ha comenzado!</p>
+                        <p id="cuenta-regresiva"></p>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+
+
